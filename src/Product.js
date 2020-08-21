@@ -1,19 +1,14 @@
 import React from "react";
 
-export default function Product() {
+export default function Product({item}) {
   return (
     <div>
-      <div>
-        <img src="" />
-      </div>
-      <div>
+      
+      <div className="Louies-DIV-for-Now">
+        {console.log(item)}
         <div>
-          <a>Fort Knight</a>
-          <p>Authentic renaissance actors, delivered in just two weeks.</p>
-        </div>
-        <div>
-          <span>Submitted by:</span>
-          <img src="" />
+          <h1>{item.votes}</h1>
+          {item.title}
         </div>
       </div>
     </div>
