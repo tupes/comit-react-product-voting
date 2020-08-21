@@ -5,22 +5,23 @@ import Product from "./Product";
 
 export default function ProductList() {
 
-  const [product, setProductVote] = useState(products);
+  const [product, setProduct] = useState(products);
   
-  const handleProductVotes = (vote) =>{
-    console.log(vote);
+  const handleProductVotes = (id) => {
+    const votedItem = product.map((item) => item.id === id? {...item, votes: item.votes+1}: item);
+    setProduct(votedItem)
   }
 
+  
 
   return (
     <div>
       <h1>Popular Products</h1>
-    
           <div>
-            <Product item={product}/>
+            <Product 
+            products={product}
+            handleVotes={handleProductVotes}/>
           </div>
- 
-      
     </div>
   );
 }
