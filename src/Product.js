@@ -1,22 +1,28 @@
 import React from "react";
 
-export default function Product() {
+export default function Product({products, handleVotes}) {
   return (
     <div>
-      <div>
-        <img src="" />
-      </div>
-      <div>
         <div>
-          <a>Fort Knight </a>
-          <p>Authentic renaissance actors, delivered in just two weeks.</p>
-          <p>Added paragraph</p>
-        </div>
-        <div>
-          <span>Submitted by:</span>
           <img src="" />
         </div>
-      </div>
-    </div>
+        
+        
+      <div className="Louies-DIV-for-Now">
+  
+           {products.map(item => (
+                <div key={item.id}> 
+                    <button onClick={()=> handleVotes(item.id)}>ARROW UP</button><span style={{padding: '.5em'}} >{item.votes}</span>
+                </div>
+            ))}
+          
+        </div>
+
+
+        <div>
+          <span>Submitted by:</span>	
+          <img src="" />
+        </div>
+ </div>  
   );
 }
