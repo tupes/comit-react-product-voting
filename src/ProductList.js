@@ -8,6 +8,7 @@ export default function ProductList() {
     <div>
       <h1>Popular Products</h1>
       <Product />
+      
     </div>
   );
 }
