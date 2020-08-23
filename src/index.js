@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import './styling.css';
+import './styling.css'
 
-import ProductList from "./ProductList";
+import ProductList from './ProductList'
 
-ReactDOM.render(<ProductList />, document.getElementById("root"));
+ReactDOM.render(<ProductList />, document.getElementById('root'))

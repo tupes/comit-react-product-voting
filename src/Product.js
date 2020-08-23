@@ -16,15 +16,15 @@ export default function Product({ products, handleVotes }) {
             <span className='number'>{item.votes}</span>
             <div className='author'>
               <br />
-              <a Fort Knight />
-              <p className="description">Company discription here</p>
+              <a href="#">{item.title}</a>
+              <p className='description'>{item.description}</p>
             </div>
           </div>
         ))}
       </div>
 
       <div className='flex'>
-        <span className="submit">Submitted by:</span>
+        <span className='submit'>Submitted by:</span>
         {/* <img className='avatar' src={props.avatar} /> /*avatar is a property  @Reema */}
       </div>
     </div>
