@@ -5,7 +5,7 @@ import Product from "./Product";
 
 export default function ProductList() {
 
-  const [product, setProduct] = useState(products);
+    
   
   const handleProductVotes = (id) => {
     const votedItem = product.map((item) => item.id === id? {...item, votes: item.votes+1}: item);
