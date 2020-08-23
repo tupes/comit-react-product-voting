@@ -1,31 +1,33 @@
 import React,{useState} from "react";
 
-export default function Product(props) {
-  const [vote, setVote] = useState(props.vote);
-  const handleClick = () => {
-      setVote(vote+1);
-  }
+export default function Product({products, handleVotes}) {
   return (
-    <div className="flex">
-      <div className="img">
-        <img src="" />
-      </div>
-      <div>
+    <div>
         <div>
-          <span className="triangle" onClick={handleClick}>▲</span>
-          <span className="number">{vote}</span> {/*vote is a property*/}
-          <div className="author">
-            <br></br>
-            <a>Fort Knight</a>
-          </div>
-          <p className="description">Authentic renaissance actors, delivered in just two weeks.</p>
+          <img src="" />
         </div>
-        <br></br>
+        
+        
+      <div>
+  
+           {products.map(item => (
+                <div key={item.id}> 
+                    <span className="triangle" onClick={()=> handleVotes(item.id)}>▲</span> 
+                    <span className="number">{item.votes}</span>
+                    <div className="author"> 
+                      <br></br>
+                      <a>Fort Knight</a>
+                     </div>
+                </div>
+            ))}
+          
+        </div>
+
+
         <div className="flex">
-          <div className="submit">Submitted by:</div>
+          <span>Submitted by:</span>	
           <img className="avatar" src={props.avatar} /> {/*avatar is a property*/}
         </div>
-      </div>
-    </div>
+ </div>  
   );
 }
