@@ -17,7 +17,7 @@ export default function ProductList() {
     <div>
       <h1 className='title'>Popular Products</h1>
       <hr />
-      <div>
+      <div className="main">
         <Product products={product} handleVotes={handleProductVotes} />
       </div>
     </div>

@@ -1,5 +1,43 @@
+:root {
+    box-sizing: border-box;
+  }
+  
+*, ::before, ::after {
+box-sizing: inherit;
+}
+
+body {
+font-family: Helvetica, Arial, sans-serif;
+}
+
+body * + * {
+margin-top: 1.5em;
+}
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60em;
+    
+}
+.itemRow {
+    padding-bottom: .5em;
+    display: flex;
+}
+
+.bigAvatar {
+    margin: 24px 15px 0 0;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .itemContents {
+    flex-direction: column;
+    flex: 2;
+  }
+
 .title{
     text-align: center;
+    margin-top: 0;
     margin-bottom: 0px;
 }
 
@@ -8,9 +46,6 @@ hr{
     border-color: lightgray;
 }
 
-.flex{
-    display: flex;
-}
 
 .img{
     margin-right: 20px;
@@ -25,6 +60,7 @@ hr{
     color: #5384ba;
     margin-right: 5px;
     margin-left: 5px;
+    margin-top: 0;
     cursor: pointer;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -33,15 +69,18 @@ hr{
 
 .number{
     font-weight: bold;
+    font-size: 1.3em;
 }
 
 .author{
+    margin-top: 0;
     color:#5384ba;
     font-size:16px;
     font-weight: bold;
 }
 
 .description{
+    color: #000;
     margin: 0px;
     font-size:16px;
     font-weight: 400;
@@ -55,6 +94,6 @@ hr{
 .avatar{
     height: 30px;
     width: 30px;
-    margin: 0px 10px;
+    margin: 0, 0, 0, 0;
     border-radius: 50%;
 }
