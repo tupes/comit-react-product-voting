@@ -5,7 +5,7 @@ export const products = [
     description: 'On-demand sand castle construction expertise.',
     url: '#',
     votes: 5,
-    submitterAvatarUrl: 'images/avatars/daniel.jpg',
+    submitterAvatarUrl: <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-3.png"/>,
     productImageUrl: 'images/products/image-aqua.png',
   },
   {
@@ -15,7 +15,7 @@ export const products = [
     description: 'High-minded or absent minded? You decide.',
     url: '#',
     votes: 7,
-    submitterAvatarUrl: 'Find avatar URL',
+    submitterAvatarUrl: <img src="https://img.icons8.com/dusk/64/000000/circled-user-female-skin-type-3.png"/>,
     productImageUrl: 'Add image here',
   },
   {
@@ -24,7 +24,7 @@ export const products = [
     description: 'We already have your measurements and shipping address.',
     url: '#',
     votes: 3,
-    submitterAvatarUrl: 'Find avatar URL',
+    submitterAvatarUrl: <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-3.png"/>,
     productImageUrl: 'Add image here',
   },
   {
@@ -33,7 +33,7 @@ export const products = [
     description: 'Earn points when your favourite politicians pass legislation',
     url: '#',
     votes: 2,
-    submitterAvatarUrl: 'Find avatar URL',
+    submitterAvatarUrl: <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-4.png"/>,
     productImageUrl: 'Add image here',
   },
 ]
