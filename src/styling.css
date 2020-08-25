@@ -17,8 +17,8 @@ hr{
 }
 
 .img img{
-    width: 150px;
-    height: 120px;
+    width: 120px;
+    height: 100px;
 }
 
 .triangle{
@@ -35,7 +35,7 @@ hr{
     font-weight: bold;
 }
 
-.author{
+.product-title{
     color:#5384ba;
     font-size:16px;
     font-weight: bold;
@@ -45,6 +45,7 @@ hr{
     margin: 0px;
     font-size:16px;
     font-weight: 400;
+    color: black;
 }
 
 .submit{
