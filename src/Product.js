@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 
 export default function Product({ products, handleVotes }) {
   return (
-    <div>
-      <div>
+    <div className="flex">
+      <div className="img">
         <img src='' /> {/* @Alexandr  */}
       </div>
 
