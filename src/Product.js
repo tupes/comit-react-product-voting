@@ -15,16 +15,15 @@ export default function Product({ products, handleVotes }) {
               ▲
             </span>
             <span className='number'>{item.votes}</span>
-            <div className='author'>
-              <br />
-              <a href="#">{item.title}</a>
+            <div>
+              <a  className='product-title' href="#">{item.title}</a>
               <p className='description'>{item.description}</p>
-              <br />
             </div>
               <div className='flex'>
                 <span className='submit'>Submitted by:</span>
                 <img className='avatar' src={item.submitterAvatarUrl} alt="img" />
               </div>
+            <br />
           </div>
         ))}
       </div>
