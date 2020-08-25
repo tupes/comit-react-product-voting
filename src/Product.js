@@ -4,13 +4,13 @@ export default function Product({ products, handleVotes }) {
 
   return (
     <div className="flex">
-      <div className="img">
-        <img src='' /> {/* @Alexandr  */}
-      </div>
 
       <div>
         {products.map((item) => (
           <div key={item.id}>
+          <div className="img">
+            <img src={item.productImageUrl} />
+          </div>
             <span className='triangle' onClick={() => handleVotes(item.id)}>
               ▲
             </span>
