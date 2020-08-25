@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 
 export default function Product({ products, handleVotes }) {
+
   return (
     <div>
       <div>
-        <img src='' /> {/* @Alexandr  */}
+        <img className="avatar" src='' /> {/* @Alexandr  */}
       </div>
 
       <div>
@@ -18,15 +19,16 @@ export default function Product({ products, handleVotes }) {
               <br />
               <a href="#">{item.title}</a>
               <p className='description'>{item.description}</p>
+              <br />
             </div>
+              <div className='flex'>
+                <span className='submit'>Submitted by:</span>
+                <img className='avatar' src={item.submitterAvatarUrl} alt="img" />
+              </div>
           </div>
         ))}
       </div>
 
-      <div className='flex'>
-        <span className='submit'>Submitted by:</span>
-        {/* <img className='avatar' src={props.avatar} /> /*avatar is a property  @Reema */}
-      </div>
     </div>
   )
 }
