@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 export default function Product({ products, handleVotes }) {
 
   return (
-    <div>
-      <div>
-        <img className="avatar" src='' /> {/* @Alexandr  */}
+    <div className="flex">
+      <div className="img">
+        <img src='' /> {/* @Alexandr  */}
       </div>
 
       <div>
