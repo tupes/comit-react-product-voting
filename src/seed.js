@@ -6,7 +6,7 @@ export const products = [
     url: '#',
     votes: 5,
     submitterAvatarUrl: "https://img.icons8.com/color/48/000000/circled-user-male-skin-type-3.png",
-    productImageUrl: 'images/products/image-aqua.png',
+    productImageUrl: "https://img.icons8.com/nolan/64/car.png",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const products = [
     url: '#',
     votes: 7,
     submitterAvatarUrl: "https://img.icons8.com/dusk/64/000000/circled-user-female-skin-type-3.png",
-    productImageUrl: 'Add image here',
+    productImageUrl: "https://img.icons8.com/nolan/64/hamburger.png",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const products = [
     description: 'We already have your measurements and shipping address.',
     votes: 3,
     submitterAvatarUrl: "https://img.icons8.com/color/48/000000/circled-user-female-skin-type-3.png",
-    productImageUrl: 'Add image here',
+    productImageUrl: "https://img.icons8.com/nolan/64/movie.png",
   },
   {
     id: 4,
@@ -33,6 +33,6 @@ export const products = [
     url: '#',
     votes: 2,
     submitterAvatarUrl: "https://img.icons8.com/color/48/000000/circled-user-female-skin-type-4.png",
-    productImageUrl: 'Add image here',
+    productImageUrl: "https://img.icons8.com/nolan/64/retro-tv.png",
   },
 ]

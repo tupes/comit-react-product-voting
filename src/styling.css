@@ -17,8 +17,8 @@ hr{
 }
 
 .img img{
-    width: 120px;
-    height: 100px;
+    width: 62px; /* Just the size from the website */
+    height: 62px;
 }
 
 .triangle{
